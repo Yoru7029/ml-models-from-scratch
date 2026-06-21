@@ -1,9 +1,10 @@
 import numpy as np
 
+from base_model import base
 from ._utils import stochastic_gradient_descent, newton_raphson, sigmoid
 
 
-class LogisticRegression():
+class LogisticRegression(base.Model):
     """
     Own attempt on implementing Logistic Regression model.
     Method used for this class is Maximum Likelihood Estimation (MLE) or Graidient Descent (GD)

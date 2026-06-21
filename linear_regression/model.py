@@ -1,9 +1,10 @@
 import numpy as np
 
+from base_model import base
 from ._utils import stochastic_GD
 
 
-class LinearRegression():
+class LinearRegression(base.Model):
     """
     Own attempt on implementing Linear Regression model.
     Method used for this class is Ordinary Least Squares (OLS)
